@@ -1,0 +1,186 @@
+/* navbar */
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background: rgb(11 15 37 / 76%);
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    width: 100%;
+}
+
+
+
+.nav-list li{
+    list-style: none;
+    padding: 6px 22px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.nav-list li a:hover{
+    color:  #ED7745;
+}
+
+/* dropdown menu */
+.drop-box{
+    position: absolute;
+    top: 4vh;
+    opacity: 1;
+    visibility:hidden ;
+    z-index: 1;
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+
+}
+.drop-box .content{
+    color: #999999;
+    display: flex;
+    padding: 20px 8px;
+    width: 100%;
+    background: #FFFFFF;
+    justify-content: space-between;
+}
+
+.content .row .drop-link{
+    margin-left: -8px;
+    border-left: 1px solid #eaeced;
+}
+
+.row .drop-link li a{
+   color: #2F4858;
+    font-size: 18px;
+    display: block;
+}
+
+.row .drop-link li a:hover{
+    color: #ED7745;
+}
+
+.nav-list li:hover .drop-box {
+    opacity: 1; /* Visible on hover */
+    visibility: visible; /* Visible on hover */
+}
+
+.head{
+    cursor: pointer;
+    color:black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 8%;
+    
+}
+
+/* section */
+.section1{
+    padding-top: 6px;
+    padding-bottom: 60px;
+}
+.s-head{
+    position: relative;
+    margin-bottom: 30px;
+    padding: 20px 0 10px 0;
+    font-family: "Mrs Eaves XL Serif", serif;
+    font-size: 28px;
+    line-height: 32px;
+    color: #2F4858;
+    text-align: center;
+    text-transform: capitalize;
+    
+}
+.s-head::after {
+    content: '';
+    display: block;
+    width: 32%; 
+    margin: 10px auto 0; 
+    border-bottom: 2px solid #ED7745; 
+}
+.s-name{
+    padding: 16px 0 8px 0;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+.sofa{
+    display: flex;
+    align-items: stretch; 
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    
+}
+.item{
+    border: 1px solid black;
+    padding: 12px;
+    margin: 16px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+}
+
+.pricing{
+    text-align: center;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.s-btn{
+    padding: 6px 30px;
+    border-radius: 3px !important;
+    font-size: 16px;
+    color: #ED7745;
+    transition: background-color 300ms ease-out;
+    font-weight: normal;
+    line-height: normal;
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: block; /* Makes button take up full width */
+    border: 2px solid  #ED7745;
+    cursor: pointer;
+
+}
+.s-btn:hover{
+    background-color: #e4571a;
+    color: #FFFFFF;
+}
+.a-btn {
+    background-color: #ED7745;
+    padding: 8px 30px;
+    border-radius: 3px !important;
+    font-size: 16px;
+    color: #FFFFFF;
+    transition: background-color 300ms ease-out;
+    font-weight: normal;
+    line-height: normal;
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: block; /* Makes button take up full width */
+    border-style: solid;
+    border-width: 0;
+    cursor: pointer;
+}
+.a-btn:hover{
+    background-color: #e4571a;
+}
+
+a{
+    text-decoration: none;
+}

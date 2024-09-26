@@ -1,0 +1,18 @@
+@media only screen and (max-width:1440px){
+    .section-center{
+        margin-left: 271px;
+    }
+
+    .section-center i{
+        top: 9%;
+        right: 146vh;
+    }
+
+    .section-right{
+        margin-left: 192px;
+    }
+
+    .background{
+        height: 206%;
+    }
+}
